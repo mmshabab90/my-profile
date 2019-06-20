@@ -80,7 +80,7 @@ export default class Projects extends Component {
                 <div className="projects-grid">
                     {/* project 4 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px', }}>
-                        <CardTitle style={{color: 'black', height:'176px', background: 'url(/assets/img/jsdemo1.png) center / cover'}} >
+                        <CardTitle style={{color: 'black', height:'176px', background: 'url(https://i.ibb.co/dcNvC8R/jsdemo1.png) center / cover'}} >
                             JS Bubble Demo
                         </CardTitle>
                         <CardText>
@@ -99,7 +99,7 @@ export default class Projects extends Component {
                     </Card>
                     {/* project 5 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
-                        <CardTitle style={{color: 'aqua', height:'176px', background: 'url(/assets/img/Snap!.png) center / cover'}} >
+                        <CardTitle style={{color: 'aqua', height:'176px', background: 'url(https://i.ibb.co/yYwFfcB/Snap.png) center / cover'}} >
                             JS Snap Demo
                         </CardTitle>
                         <CardText>
@@ -124,7 +124,7 @@ export default class Projects extends Component {
                 <div className="projects-grid">
                     {/* project 6 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
-                        <CardTitle style={{color: 'black', height:'176px', background: 'url(/assets/img/football-game-simulator.png) center / cover'}} >
+                        <CardTitle style={{color: 'black', height:'176px', background: 'url(https://i.ibb.co/H7DsyrX/football-game-simulator.png) center / cover'}} >
                             Ember Footall Simulation
                         </CardTitle>
                         <CardText>

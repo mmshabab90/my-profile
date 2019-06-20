@@ -9,7 +9,7 @@ export default class Contact extends Component {
                     <Cell col={6}>
                         <h2> Meeyad Shabab</h2>
                         <img
-                            src = "/assets/img/meeyad_photo.jpg"
+                            src = {process.env.PUBLIC_URL + '/assets/img/meeyad_photo.jpg'}
                             alt = "avatar"
                             style = {{ height: '250px', borderRadius: '5%', }}
                         />

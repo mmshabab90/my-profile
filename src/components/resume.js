@@ -13,12 +13,12 @@ export default class Resume extends Component {
                         <div style={{textAlign: 'center'}}>
                             <Grid>
                                 <Cell col={12}>
-                                    <img src="/assets/img/my_pic.jpg"
+                                    <img src= {process.env.PUBLIC_URL + "/assets/img/my_pic.jpg"}
                                         alt="avatar"
                                         style={{height: '200px', borderRadius: '50%', marginBottom: '2em', justifyContent: 'enter'}} />                                </Cell>
                                 <Cell col={12}>
                                     <Button raised accent>
-                                        <a href="/assets/Meeyad_CV.pdf" style={{color:'white', textDecoration: 'none'}}>
+                                        <a href={process.env.PUBLIC_URL + "/assets/Meeyad_CV.pdf"} style={{color:'white', textDecoration: 'none'}}>
                                             CV in pdf
                                         </a>
                                     </Button>
