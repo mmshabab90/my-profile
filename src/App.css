@@ -1,0 +1,113 @@
+.header-color {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+.avatar-img {
+    height: 250px;
+    padding-top: 5em;
+    border-radius: 50%; 
+}
+
+.banner-text {
+    background-color: black;
+    opacity: .8;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.banner-text hr {
+    border-top: 5px dotted white;
+    width: 50%;
+    margin: auto;
+}
+
+.banner-text p {
+    color: wheat;
+    font-size: 19px;
+    padding: 1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.social-links i {
+    color: antiquewhite;
+    font-size: 5em;
+    padding: 8px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* contact page css */
+.contact-body{
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    color: black;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.contact-grid h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+    font-family: 'Onygen', sans-serif;
+    font-weight: bold;
+}
+
+.contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-list i {
+    font-size: 50px;
+    padding-right: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* resume page css */
+.resume-right-col{
+    background: #27221f;
+    color: whitesmoke;
+    padding: 2em;
+}
