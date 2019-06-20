@@ -2,11 +2,16 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 import Main from './components/main';
-import { Link } from "react-router-dom";
+import  LandingPage  from './components/landingpage';
+import { Route, Link } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="demo-big-content">
+
+    <Route exact path={`/`} render={ (routerProps) => < LandingPage routerProps={routerProps} />} />
+
         <Layout>
             <Header className="header-color" scroll 
             title={<strong><Link to="/">My Portfolio</Link></strong>}>
