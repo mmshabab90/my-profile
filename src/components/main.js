@@ -8,14 +8,12 @@ import Projects from './projects';
 import Resume from './resume';
 
 const Main = () => (
-    <HashRouter>
         <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/contact" component={Contact} />
             <Route path="/projects" component={Projects} />
             <Route path="/resume" component={Resume} />
         </Switch>
-    </HashRouter>
     
 )
 
