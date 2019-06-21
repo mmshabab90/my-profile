@@ -1,6 +1,6 @@
 // all routes go here and is a stateless component
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import LandingPage from './landingpage';
 import Contact from './contact';
