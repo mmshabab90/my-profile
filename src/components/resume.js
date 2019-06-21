@@ -27,18 +27,18 @@ export default class Resume extends Component {
                         </div>
                         <h2 style={{paddingTop: '5px'}}>Meeyad Shabab</h2>
                         <h4 style={{color: 'grey'}}>Programmer and Tech Enthusiast</h4>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}} />
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%', margin:'auto'}} />
                         <p>
                             A freelance developer having around 4 years experience in software QA. Also passionate about front-end and mobile application development.
                         </p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}} />
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%', margin:'auto'}} />
                         <h5>Address</h5>
                         <p>Harald Bothners Veg. 6, 7052-Trondheim</p>
                         <h5>Phone#</h5>
                         <p>(+47) 46 36 45 90</p>
                         <h5>Email</h5>
                         <p>mmshabab90@gmail.com</p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}} />
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%', margin:'auto'}} />
                     </Cell>
 
                     <Cell col={8} className="resume-right-col">
