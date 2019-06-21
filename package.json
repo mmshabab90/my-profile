@@ -2,7 +2,7 @@
   "name": "my_profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mmshabab90@github.io/my-profile/",
+  "homepage": "https://mmshabab90@github.io/my-profile",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
