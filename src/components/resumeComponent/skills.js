@@ -7,7 +7,12 @@ export default class Skills extends Component {
             <div>
                 <Grid>
                     <Cell col={12}>
-                    <div style={{display: 'flex'}}>{this.props.skill} <ProgressBar style={{margin: 'auto', width: '75%'}} progress={this.props.progress} /> </div>
+                    <div style={{display: 'flex'}}>
+                        <Cell col={4}>{this.props.skill}</Cell>
+                        <Cell col={8}>
+                        <ProgressBar style={{margin: 'auto', width: '75%'}} progress={this.props.progress} />
+                        </Cell>
+                    </div>
                     </Cell>
                 </Grid>
             </div>
