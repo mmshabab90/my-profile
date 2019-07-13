@@ -11,6 +11,7 @@ export default class Projects extends Component {
 
     // project portfolio based on category
     toggleCategories() {
+        // category: HTML+CSS
         if( this.state.activeTab === 0){
             return(
                 <div className="projects-grid">
@@ -40,11 +41,11 @@ export default class Projects extends Component {
                     </Card>
                     {/* project 2 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
-                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ks01.gif) center / cover'}} >
+                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ktsf.gif) center / cover'}} >
                             Health +
                         </CardTitle>
                         <CardText>
-                            A landing page for an imaginary gym created with basic HTML and CSS. The website is not responsive.
+                            A landing page for an imaginary gym created with basic HTML and CSS. The website is not responsive and the contact number is a random number just for placeholder.
                         </CardText>
                         <CardActions border>
                         <Button colored>
@@ -64,20 +65,20 @@ export default class Projects extends Component {
                     </Card>
                     {/* project 3 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
-                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ks01.gif) center / cover'}} >
-                            Coming Soon...
+                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35kubh.gif) center / cover'}} >
+                            Sushi Me
                         </CardTitle>
                         <CardText>
-                            A landing page with a countdown timer. It is a small project created while learning HTML and CSS. The project uses flip clock jquery plugin.
+                            A landing page with a video background created using basic HTML and CSS. The page is created with some responsive feature in mind.
                         </CardText>
                         <CardActions border>
                         <Button colored>
-                            <a href="https://github.com/mmshabab90/front-end-web/tree/master/ComingSoon">
+                            <a href="https://github.com/mmshabab90/front-end-web/tree/master/LandingPages/SushiMe">
                                 Github
                             </a>
                         </Button>
                         <Button colored>
-                            <a href="https://mmshabab90.github.io/front-end-web/ComingSoon/index.html">
+                            <a href="https://mmshabab90.github.io/front-end-web/LandingPages/SushiMe/SushiMe.html">
                                 Demo
                             </a>
                         </Button>
@@ -89,7 +90,39 @@ export default class Projects extends Component {
                 </div>
             )
         }
+
+        // category: React
         else if( this.state.activeTab === 1){
+            return(
+                <div className="projects-grid">
+                    {/* project 1 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px', }}>
+                        <CardTitle style={{color: 'red', height:'176px', background: 'url(https://i.imgflip.com/35kv46.gif) center / cover'}} >
+                            My Profile
+                        </CardTitle>
+                        <CardText>
+                            This website is created with Reac while learning React JS. React Material Design Library is used for CSS styling. 
+                            The page is hosted using github pages.
+                            The website demonstrates a basic skill in React and is continuously updated as I learn react.
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>
+                                <a href="https://github.com/mmshabab90/ToDo">
+                                    Github                                    
+                                </a>
+                            </Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                </div>
+                
+            )
+        }
+
+        // category: React Native
+        else if( this.state.activeTab === 2){
             return(
                 <div className="projects-grid">
                     {/* project 1 */}
@@ -153,10 +186,12 @@ export default class Projects extends Component {
                 
             )
         }
-        else if( this.state.activeTab === 2){
+
+        // category: Javascript
+        else if( this.state.activeTab === 3){
             return(
                 <div className="projects-grid">
-                    {/* project 4 */}
+                    {/* project 1 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px', }}>
                         <CardTitle style={{color: 'black', height:'176px', background: 'url(https://i.ibb.co/dcNvC8R/jsdemo1.png) center / cover'}} >
                             JS Bubble Demo
@@ -175,7 +210,7 @@ export default class Projects extends Component {
                             <IconButton name="share"/>
                         </CardMenu>
                     </Card>
-                    {/* project 5 */}
+                    {/* project 2 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
                         <CardTitle style={{color: 'aqua', height:'176px', background: 'url(https://i.ibb.co/yYwFfcB/Snap.png) center / cover'}} >
                             JS Snap Demo
@@ -197,10 +232,12 @@ export default class Projects extends Component {
                 </div>
             )
         }
-        else if( this.state.activeTab === 3){
+
+        // category: EmberJS
+        else if( this.state.activeTab === 4){
             return(
                 <div className="projects-grid">
-                    {/* project 6 */}
+                    {/* project 1 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
                         <CardTitle style={{color: 'black', height:'176px', background: 'url(https://i.ibb.co/H7DsyrX/football-game-simulator.png) center / cover'}} >
                             Ember Footall Simulation
@@ -235,6 +272,7 @@ export default class Projects extends Component {
                 <Tabs activeTab={ this.state.activeTab } 
                 onChange={ (tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>HTML+CSS</Tab>
+                    <Tab>React</Tab>
                     <Tab>React-Native</Tab>
                     <Tab>JavaScript</Tab>
                     <Tab>EmberJS</Tab>
