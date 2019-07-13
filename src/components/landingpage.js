@@ -1,12 +1,30 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from 'react-mdl';
 
+import Particles from 'react-particles-js';
+
+const particleOption = {
+    particles: {
+        number: {
+            value: 150,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        }
+    }
+}
+
 export default class LandingPage extends Component {
     render() {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
+                        <Particles 
+                            params = {particleOption}
+                            className="particles"
+                        />
                         <img
                             src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
                             alt="avatar"
