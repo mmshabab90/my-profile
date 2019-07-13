@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Layout } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faReacteurope, faEmber, faJs } from '@fortawesome/free-brands-svg-icons';
 
 export default class Projects extends Component {
 
@@ -271,11 +273,11 @@ export default class Projects extends Component {
             <div>
                 <Tabs activeTab={ this.state.activeTab } 
                 onChange={ (tabId) => this.setState({ activeTab: tabId })} ripple className="tab-content" >
-                    <Tab>HTML</Tab>
-                    <Tab>React</Tab>
-                    <Tab>React-Native</Tab>
-                    <Tab>JavaScript</Tab>
-                    <Tab>EmberJS</Tab>
+                    <Tab><i className="fa fa-html5" aria-hidden="true"/> + <i class="fa fa-css3" aria-hidden="true"/></Tab>
+                    <Tab><FontAwesomeIcon icon={faReact} /></Tab>
+                    <Tab><FontAwesomeIcon icon={faReacteurope} /></Tab>
+                    <Tab><FontAwesomeIcon icon={faJs} /></Tab>
+                    <Tab><FontAwesomeIcon icon={faEmber} /></Tab>
                 </Tabs>
 
                 <Grid>
