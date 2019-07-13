@@ -15,6 +15,84 @@ export default class Projects extends Component {
             return(
                 <div className="projects-grid">
                     {/* project 1 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
+                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ks01.gif) center / cover'}} >
+                            Coming Soon...
+                        </CardTitle>
+                        <CardText>
+                            A landing page with a countdown timer. It is a small project created while learning HTML and CSS. The project uses flip clock jquery plugin.
+                        </CardText>
+                        <CardActions border>
+                        <Button colored>
+                            <a href="https://github.com/mmshabab90/front-end-web/tree/master/ComingSoon">
+                                Github
+                            </a>
+                        </Button>
+                        <Button colored>
+                            <a href="https://mmshabab90.github.io/front-end-web/ComingSoon/index.html">
+                                Demo
+                            </a>
+                        </Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* project 2 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
+                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ks01.gif) center / cover'}} >
+                            Health +
+                        </CardTitle>
+                        <CardText>
+                            A landing page for an imaginary gym created with basic HTML and CSS. The website is not responsive.
+                        </CardText>
+                        <CardActions border>
+                        <Button colored>
+                            <a href="https://github.com/mmshabab90/front-end-web/tree/master/LandingPages/HealthPlus">
+                                Github
+                            </a>
+                        </Button>
+                        <Button colored>
+                            <a href="https://mmshabab90.github.io/front-end-web/LandingPages/HealthPlus/HealthPlus.html">
+                                Demo
+                            </a>
+                        </Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* project 3 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px',}}>
+                        <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/35ks01.gif) center / cover'}} >
+                            Coming Soon...
+                        </CardTitle>
+                        <CardText>
+                            A landing page with a countdown timer. It is a small project created while learning HTML and CSS. The project uses flip clock jquery plugin.
+                        </CardText>
+                        <CardActions border>
+                        <Button colored>
+                            <a href="https://github.com/mmshabab90/front-end-web/tree/master/ComingSoon">
+                                Github
+                            </a>
+                        </Button>
+                        <Button colored>
+                            <a href="https://mmshabab90.github.io/front-end-web/ComingSoon/index.html">
+                                Demo
+                            </a>
+                        </Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                </div>
+            )
+        }
+        else if( this.state.activeTab === 1){
+            return(
+                <div className="projects-grid">
+                    {/* project 1 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom: '12px', }}>
                         <CardTitle style={{color: 'white', height:'176px', background: 'url(https://i.imgflip.com/31ptxy.gif) center / cover'}} >
                             ToDo App
@@ -75,7 +153,7 @@ export default class Projects extends Component {
                 
             )
         }
-        else if( this.state.activeTab === 1){
+        else if( this.state.activeTab === 2){
             return(
                 <div className="projects-grid">
                     {/* project 4 */}
@@ -119,7 +197,7 @@ export default class Projects extends Component {
                 </div>
             )
         }
-        else if( this.state.activeTab === 2){
+        else if( this.state.activeTab === 3){
             return(
                 <div className="projects-grid">
                     {/* project 6 */}
@@ -156,6 +234,7 @@ export default class Projects extends Component {
             <div className="category-tabs">
                 <Tabs activeTab={ this.state.activeTab } 
                 onChange={ (tabId) => this.setState({ activeTab: tabId })} ripple>
+                    <Tab>HTML+CSS</Tab>
                     <Tab>React-Native</Tab>
                     <Tab>JavaScript</Tab>
                     <Tab>EmberJS</Tab>
