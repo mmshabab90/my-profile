@@ -131,3 +131,7 @@
     color: whitesmoke;
     padding: 2em;
 }
+
+.tab-content {
+    word-wrap: break-word;
+}

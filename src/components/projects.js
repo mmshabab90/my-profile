@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Layout } from 'react-mdl';
 
 export default class Projects extends Component {
 
@@ -268,23 +268,24 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div className="category-tabs">
+            <div>
                 <Tabs activeTab={ this.state.activeTab } 
-                onChange={ (tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>HTML+CSS</Tab>
+                onChange={ (tabId) => this.setState({ activeTab: tabId })} ripple className="tab-content" >
+                    <Tab>HTML</Tab>
                     <Tab>React</Tab>
                     <Tab>React-Native</Tab>
                     <Tab>JavaScript</Tab>
                     <Tab>EmberJS</Tab>
                 </Tabs>
+
                 <Grid>
                     <Cell col={12}>
                         <div className="content">
                             { this.toggleCategories() }
                         </div>
                     </Cell>
-                </Grid>
-            </div>
+                </Grid>           
+             </div>
         )
     }
 }
