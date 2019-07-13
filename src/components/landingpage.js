@@ -8,7 +8,7 @@ export default class LandingPage extends Component {
                 <Grid className="landing-grid">
                     <Cell col={12}>
                         <img
-                            src={process.env.PUBLIC_URL + '/assets/img/my_pic.jpg'}
+                            src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
                             alt="avatar"
                             className="avatar-img"
                         />
