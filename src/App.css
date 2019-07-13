@@ -18,6 +18,11 @@
     text-align: center;
 }
 
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
 .avatar-img {
     height: 250px;
     padding-top: 5em;

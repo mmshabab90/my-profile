@@ -28,7 +28,12 @@ export default class App extends Component {
 
                 <Layout>
                     <Header className="header-color" scroll 
-                    title={<strong><Link to="/" onClick={() => this.hideToggle()}>My Portfolio</Link></strong>}>
+                    title={<strong>
+                        <Link to="/" onClick={() => this.hideToggle()}><img
+                            src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
+                            alt="avatar"
+                            className="logo"/>
+                        </Link></strong>}>
                         <Navigation>
                             <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
                             <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
